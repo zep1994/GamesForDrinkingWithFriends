@@ -7,14 +7,16 @@
   height: 40vmin;
 }
 
+.App-title {
+  margin-left: -1000px;
+}
+
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: white;
 }
 
@@ -22,11 +24,59 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main {
+  width: 100%;
+}
+
+.main h1 {
+  font-size: 40px;
+  font-family: 'Monoton';
+  font-family: 'Anton', sans-serif;
+
+}
+
+.main h3 {
+  width: 60%;
+  margin-left: 300px;
+  font-family: 'Assistant', sans-serif;
+
+}
+
+.main.home {
+  text-align: center;
+}
+
+.gridRow  {
+  margin-top: 30px;
+}
+
+.direction.col-xs-4 {
+  width: 40%;
+  padding-right: 0px;
+}
+
+label {
+  color:black;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  font-family: 'Paytone One', sans-serif;
+}
+
+textarea[type="text"] {
+  font-family: 'Paytone One', sans-serif;
+  height: 70px;
+  width: 300px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+.ingredient.col-xs-4 {
+  padding-left: 0px;
+}
+
+.submit {
+  margin-bottom: 20px;
 }
