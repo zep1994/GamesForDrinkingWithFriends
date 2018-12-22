@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import SideNavBar from './components/nav/SideNavBar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import GameForm from './components/GameForm'
+import Games from './containers/Games'
 import Home from './components/Home';
 import './App.css';
 
@@ -18,8 +20,8 @@ class App extends Component {
             <div>
               <Switch>
                 <Route exact path='/' component={Home}/>
-                {/* <Route exact path='/games/new' component={GameForm} />
-                <Route path='/games' component={Games}/> */}
+                <Route exact path='/games/new' component={GameForm} />
+                <Route path='/games' component={Games}/>
               </Switch>
             </div>
           </Router>
