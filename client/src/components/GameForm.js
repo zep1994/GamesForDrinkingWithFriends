@@ -11,6 +11,12 @@ class GameForm extends Component {
     }
   }
 
+  handleName = event => {
+    this.setState({
+      name: event.target.value
+    })
+  }
+
 
   render() {
     return(
@@ -24,6 +30,30 @@ class GameForm extends Component {
               type="text"
               value={this.state.name}
               onChange={this.handleName}
+              />
+              <div>
+                    <label>Directions:</label>
+                    <ol>
+                      <p>DirectionInput</p>
+                    </ol>
+                    <input
+                      type='textarea'
+                      onClick={this.handleAddDirection}
+                    />
+              </div>
+              <div>
+                    <label>Drinks:</label>
+                    <ol>
+                      <p>DirectionInput</p>
+                    </ol>
+                    <input
+                      type='textarea'
+                      onClick={this.handleAddDirection}
+                    />
+              </div>
+              <input 
+              type="submit"
+              value="submit"
               />
           </div>
         </form>
